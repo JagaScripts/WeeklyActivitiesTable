@@ -1,0 +1,1 @@
+alert("La aplicación esta en estado inicial de desarrollo y el archivo principal javascript vinculado");
