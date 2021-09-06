@@ -55,3 +55,7 @@ td{
     width: 12.5%;
     height: 14.3%;
 }
+
+.checkData {
+    display: block;
+}
