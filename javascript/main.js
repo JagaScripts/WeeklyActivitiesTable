@@ -23,7 +23,11 @@ function insertActivity(index){
             for (const cell in cellData) {
                 if (cell > 0) {
                     for (let index = 0; index < numRepetitions; index++) {
-                        cellInnerHTML = cellInnerHTML + "<input type='checkbox' class='checkData' />";
+                        if (numRepetitions == 1) {
+                            cellInnerHTML = cellInnerHTML + "<input type='checkbox' class='checkData-1' />";
+                        } else {
+                            cellInnerHTML = cellInnerHTML + "<input type='checkbox' class='checkData' />";
+                        }               
                     }
                     cellData[cell].innerHTML = cellInnerHTML;
                     cellInnerHTML = "";
