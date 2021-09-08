@@ -57,5 +57,8 @@ td{
 }
 
 .checkData {
-    display: block;
+    display: inline-flex;
+    width: 50%;
+    height: 40%;
+    flex-wrap: wrap;
 }
