@@ -38,7 +38,6 @@ table {
 
 th {
     display: table-cell;
-    vertical-align: inherit;
     font-weight: bold;
     background: rgba(0,102,255,.25);
     text-align: center;
@@ -47,9 +46,8 @@ th {
     height: 14.3%;
 }
 
-td{
+td {
     display: table-cell;
-    vertical-align: inherit;
     border: 1px solid rgba(16,76,167,.25);
     background: rgba(90,156,255,.25);
     width: 12.5%;
