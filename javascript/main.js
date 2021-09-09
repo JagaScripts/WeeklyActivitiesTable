@@ -22,6 +22,7 @@ function insertActivity(index){
         }
         else
         {
+            numRepetitions = parseInt(numRepetitions);
             if(numRepetitions < MIN_CHECKS || numRepetitions > MAX_CHECKS){
                 alert("Porfavor asegurese que las repeticiones estan etre 1 y 4");          
             }
