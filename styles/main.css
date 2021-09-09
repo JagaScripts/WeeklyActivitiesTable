@@ -65,3 +65,37 @@ td {
     width: 100%;
     height: 80%;
 }
+
+/* Cuando el dispositivo esta en vertical */
+@media screen and (orientation: portrait) {
+    /* Cubre toda la pantalla del dispositivo */
+    .mensaje {
+      position: fixed;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      
+      /* Con esto ajustamos la posición del texto */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      /* Un color de fondo */
+      
+      background-color: white;
+      /* Debemos superponerlo */
+      z-index: 1000;
+    }
+    
+    /* El texto que vamos a mostrar */
+    .mensaje::before {
+      content: "Esta aplicacion solo es visible en horizontal";
+      font-size: 2rem;
+    }
+    
+    #table-week {
+      display: none;
+    }
+  }
