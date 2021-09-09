@@ -15,15 +15,19 @@ function insertActivity(index){
 
         document.getElementById("title-th-" + index).innerText = titleAtivity;
 
-    do{     
+    do{  
+
         numRepetitions = prompt("Escribe el número de repeticiones diarias entre 1 y 4");
         numRepetitions = parseInt(numRepetitions);
+
         if (isNaN(numRepetitions)) {
+
             alert("Porfavor asegurese que escribe un número");
         }
         else
         {
             if(numRepetitions < MIN_CHECKS || numRepetitions > MAX_CHECKS){
+                
                 alert("Porfavor asegurese que las repeticiones estan etre 1 y 4");          
             }
         }
