@@ -43,6 +43,8 @@ function insertActivity(index){
                 }
                 cellData[cell].innerHTML = cellInnerHTML;
                 cellInnerHTML = "";
+            }
+        }
 
 }
 
