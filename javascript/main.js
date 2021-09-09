@@ -17,18 +17,17 @@ function insertActivity(index){
 
     do{     
         numRepetitions = prompt("Escribe el número de repeticiones diarias entre 1 y 4");
-        if (typeof numRepetitions === 'string' || numRepetitions instanceof String) {
+        numRepetitions = parseInt(numRepetitions);
+        if (isNaN(numRepetitions)) {
             alert("Porfavor asegurese que escribe un número");
-            numRepetitions = 0;
         }
         else
         {
-            numRepetitions = parseInt(numRepetitions);
             if(numRepetitions < MIN_CHECKS || numRepetitions > MAX_CHECKS){
                 alert("Porfavor asegurese que las repeticiones estan etre 1 y 4");          
             }
         }
-    }while(numRepetitions < MIN_CHECKS || numRepetitions > MAX_CHECKS);
+    }while(numRepetitions < MIN_CHECKS || numRepetitions > MAX_CHECKS || isNaN(numRepetitions));
 
         var cellRep = document.getElementById("row-" + index);
         var cellData = cellRep.children;
