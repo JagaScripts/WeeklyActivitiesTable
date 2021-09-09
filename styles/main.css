@@ -91,8 +91,9 @@ td {
     
     /* El texto que vamos a mostrar */
     .mensaje::before {
-      content: "Esta aplicacion solo es visible en horizontal";
-      font-size: 2rem;
+      content: "Esta aplicacion solo es visible en horizontal, porfavor gira tu dispositivo";
+      font-size: 3rem;
+      font-weight: bolder;
     }
     
     #table-week {
