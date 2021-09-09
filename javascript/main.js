@@ -19,6 +19,7 @@ function insertActivity(index){
         numRepetitions = prompt("Escribe el número de repeticiones diarias entre 1 y 4");
         if (typeof numRepetitions === 'string' || numRepetitions instanceof String) {
             alert("Porfavor asegurese que escribe un número");
+            numRepetitions = 0;
         }
         else
         {
