@@ -60,6 +60,10 @@ function load() {
             "click", 
             function(){insertActivity(index)}
             );
+        arrayRows[index].addEventListener(
+            "touchstart", 
+            function(){insertActivity(index)}
+            );
     }
 }
 document.addEventListener("DOMContentLoaded", load, false);
