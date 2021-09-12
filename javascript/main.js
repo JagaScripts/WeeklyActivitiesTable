@@ -38,7 +38,7 @@ function insertActivity(index){
         var cellInnerHTML = "";
         for (const cell in cellData) {
             if (cell > 0) {
-                for (let index = 0; index < numRepetitions; index++) {
+                for (let i = 0; i < numRepetitions; i++) {
                     if (numRepetitions == 1) {
                         cellInnerHTML = cellInnerHTML + "<input type='checkbox' class='checkData-1' />";
                     } else {
