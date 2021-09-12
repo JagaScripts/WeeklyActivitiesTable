@@ -54,8 +54,8 @@ function insertActivity(index){
 }
 
 function load() {
-    let arrayRows = new Array(NUM_ACTIVITYS);
-    for (let index = 0; index < arrayRows.length; index++) {
+    var arrayRows = new Array(NUM_ACTIVITYS);
+    for (var index = 0; index < arrayRows.length; index++) {
         arrayRows[index] = document.getElementById("th-" + index);
         arrayRows[index].addEventListener(
             "click", 
