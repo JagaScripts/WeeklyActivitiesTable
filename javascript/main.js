@@ -37,7 +37,7 @@ function insertActivity(index){
         var cellData = cellRep.children;
         var cellInnerHTML = "";
         var i = 0;
-        for (const cell in cellData) {
+        for (var cell in cellData) {
             if (cell > 0) {
                 for (i = 0; i < numRepetitions; i++) {
                     if (numRepetitions == 1) {
