@@ -7,13 +7,19 @@
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
     <title>Tabla de actividades semanal</title>
     <script src="./javascript/main.js"></script>
+
 </head>
 <body>
     <table id="table-week">
         <thead>
             <tr>
                 <th colspan="8">
-                    <h1>Tabla de actividades semanal</h1>
+                    <h1 onclick="showAndroidToast('La aplicación esta en estado de desarrollo y ejecutamos un alert desde android')">Tabla de actividades semanal</h1>
+                    <script type="text/javascript">
+                    function showAndroidToast(toast) {
+                        Android.showToast(toast);
+                    }
+                    </script>
                 </th>
             </tr>
             <tr>

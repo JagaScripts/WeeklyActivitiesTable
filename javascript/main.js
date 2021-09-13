@@ -8,7 +8,7 @@ const MIN_CHECKS = 1;
 function insertActivity(index){
     var titleAtivity = "";
     var numRepetitions = 0;
-    Android.showToast("La aplicación esta en estado de desarrollo y ejecutamos un alert desde android");
+    
     do{
         titleAtivity = prompt("Escribe el nombre de la actividad");
     }while(titleAtivity == null || titleAtivity == "");
