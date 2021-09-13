@@ -1,4 +1,4 @@
-salert("La aplicación esta en estado inicial de desarrollo y el archivo principal javascript vinculado");
+alert("La aplicación esta en estado inicial de desarrollo y el archivo principal javascript vinculado");
 //console.log("La aplicación esta en estado inicial de desarrollo y el archivo principal javascript vinculado");
 const NUM_DAYS = 7;
 const NUM_ACTIVITYS = 6;
